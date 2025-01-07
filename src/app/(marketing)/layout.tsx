@@ -1,7 +1,11 @@
+import { Metadata } from 'next';
 import '../globals.css';
 
-export const metadata = {
-  title: 'Marketing',
+export const metadata: Metadata = {
+  title: {
+    default: 'NextJs Tutor',
+    template: '%s / NextJs',
+  },
   description: 'Marketing Page',
 };
 
